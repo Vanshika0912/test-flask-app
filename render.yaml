@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my_flask_app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5000
